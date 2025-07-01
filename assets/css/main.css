@@ -362,6 +362,19 @@ code {
 	margin-top: -40px;
 }
 
+.qr-title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* espace entre les éléments */
+  flex-wrap: wrap; /* permet un bon comportement responsive */
+}
+
+.qr-code {
+  width: 60px; /* ajuste selon la taille souhaitée */
+  height: auto;
+}
+
 @media screen and (max-width: 480px) {
 	.signature-line {
 		width: 150px;
