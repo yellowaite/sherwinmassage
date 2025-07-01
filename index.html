@@ -1,0 +1,209 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<title>Sherwin's Massage</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper" class="fade-in">
+
+		<!-- Header -->
+		<header id="top-bar">
+			<div class="logo-container">
+				<img src="images/logo.png" alt="logo" class="logo">
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#typeMassage">Services</a></li>
+					<li><a href="#footer">Contact</a></li>
+				</ul>
+			</nav>
+
+		</header>
+
+		<!-- Intro -->
+		<div id="intro">
+			<h1>Sherwin Lewis</h1>
+			<h2>Massage Therapy</h2>
+			<img src="images/line-deco.png" alt="decorative line"
+				style="width: 100px; display: block; margin: 1.5rem auto; margin-top: -1.5rem;">
+			<br><br>
+			<p>Relax, Rejuvenate, Restore</p>
+			<!-- Bouton Contact -->
+			<a href="#footer" class="button">Contact Us</a>
+		</div>
+
+
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Featured Post -->
+			<article class="post featured">
+				<header class="major" id="typeMassage">
+					<h2>Types of Massage</h2>
+					<svg class="signature-line" width="400" height="40" viewBox="0 0 400 40"
+						xmlns="http://www.w3.org/2000/svg">
+						<path d="M10,20 C100,-10 300,50 390,20" stroke="black" stroke-width="4" fill="none"
+							stroke-linecap="round" />
+					</svg>
+
+
+				</header>
+				<div class="carousel">
+					<div class="carousel-item"><img src="/images/swedish.webp" alt="Swedish Massage">
+						<p class="caption">Swedish Massage</p>
+					</div>
+					<div class="carousel-item"><img src="/images/chair.jpg" alt="Chair Massage">
+						<p class="caption">Chair Massage</p>
+					</div>
+					<div class="carousel-item"><img src="/images/thai.jpg" alt="Thai Massage">
+						<p class="caption">Thaï Yoga</p>
+					</div>
+					<div class="carousel-item">
+						<video controls width="100%" poster="/images/movement1.mp4">
+							<source src="/images/mouvement1.mp4" type="video/mp4">
+						</video>
+						<p class="caption">Mouvements</p>
+					</div>
+
+					<button class="prev" onclick="changeSlide(-1)">❮</button>
+					<button class="next" onclick="changeSlide(1)">❯</button>
+				</div>
+
+
+			</article>
+
+
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<section>
+				<h2>Contact Us</h2>
+				<form method="post" action="#">
+					<div class="fields">
+						<div class="field">
+							<label for="name">Name</label>
+							<input type="text" name="name" id="name" />
+						</div>
+						<div class="field">
+							<label for="email">Email</label>
+							<input type="text" name="email" id="email" />
+						</div>
+						<div class="field">
+							<label for="message">Message</label>
+							<textarea name="message" id="message" rows="3"></textarea>
+						</div>
+					</div>
+					<ul class="actions">
+						<li><input type="submit" value="Send Message" /></li>
+					</ul>
+				</form>
+			</section>
+			<section class="split contact">
+				<section>
+					<h3>Phone</h3>
+					<p>
+						<a href="tel:+15144581180">+1 (514) 458-1180</a><br>
+						<span style="display: inline-flex; align-items: center; white-space: nowrap; gap: 5px;">
+							<img src="/images/WhatsApp_icon.png" alt="WhatsApp" style="height: 20px;">
+							<a href="https://wa.me/15144581180" target="_blank">WhatsApp</a>
+						</span>
+					</p>
+				</section>
+
+				<section class="alt">
+					<h3>Address</h3>
+					<p>1234 Somewhere Road #87257<br />
+						Nashville, TN 00000-0000</p>
+				</section>
+				<section>
+					<h3>Email</h3>
+					<p><a href="#">info@untitled.tld</a></p>
+				</section>
+				<section>
+					<h3>Social</h3>
+					<ul class="icons alt">
+						<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a>
+						</li>
+						<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a>
+						</li>
+						<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+					</ul>
+				</section>
+			</section>
+		</footer>
+
+		<!-- Copyright -->
+		<div id="copyright">
+			<ul>
+				<li>&copy; 2025 by Sherwin's Massage. All Rights Reserved.</li>
+				<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+			</ul>
+		</div>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script>document.querySelector(".button").addEventListener("click", function (e) {
+			e.preventDefault();
+			document.querySelector("#footer").scrollIntoView({
+				behavior: "smooth"
+			});
+		});
+	</script>
+	<script>
+		let slideIndex = 0;
+		let autoSlide = setInterval(() => changeSlide(1, false), 5000);
+
+		showSlides(slideIndex);
+
+		let userInteracted = false;
+
+		function changeSlide(n, userClick = true) {
+			if (userClick && !userInteracted) {
+				clearInterval(autoSlide);
+				userInteracted = true;
+			}
+
+			showSlides(slideIndex += n);
+		}
+
+		function showSlides(n) {
+			let slides = document.getElementsByClassName("carousel-item");
+			if (n >= slides.length) { slideIndex = 0; }
+			if (n < 0) { slideIndex = slides.length - 1; }
+
+			for (let slide of slides) {
+				slide.style.display = "none";
+			}
+
+			slides[slideIndex].style.display = "flex";
+			slides[slideIndex].style.flexDirection = "column";
+			slides[slideIndex].style.alignItems = "center";
+		}
+	</script>
+
+
+</body>
+
+</html>
