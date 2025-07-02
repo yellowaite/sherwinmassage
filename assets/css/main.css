@@ -2435,7 +2435,12 @@ button.primary:hover,
 	display: block;
 	margin: auto;
 }
-
+.carousel-item video {
+	max-width: 80%;
+	max-height: 600px;
+	display: block;
+	margin: auto;
+}
 .prev,
 .next {
 	position: absolute;
