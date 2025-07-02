@@ -362,47 +362,34 @@ code {
 	margin-top: -40px;
 }
 
-
 header.major {
-  position: relative;
   text-align: center;
-  padding: 40px 0; /* Ajoute un peu d'espace vertical */
+  padding: 40px 0;
 }
 
+.qr-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
 .qr-left,
 .qr-right {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 1; /* Pour rester devant si besoin */
+  flex: 0 0 auto;
 }
-
-
-.qr-left {
-  left: 0;
-}
-
-.qr-right {
-  right: 0;
-}
-
 
 .qr-code {
-  width: 250px;   /* Ajuste la taille selon ton besoin */
+  width: 100px;
   height: auto;
 }
-
 
 .massage-title {
   font-size: 2.5em;
   font-weight: bold;
-  margin: 0 auto;
-  max-width: 60%;
-  z-index: 2;
-  position: relative;
+  margin: 0;
+  text-align: center;
+  flex: 1 1 auto;
 }
-
 
 
 
