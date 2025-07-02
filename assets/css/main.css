@@ -367,7 +367,7 @@ code {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 0 0;
+  padding: 0;
 }
 
 .qr-code {
@@ -375,10 +375,18 @@ code {
   height: auto;
 }
 
+.qr-code.left {
+  margin-left: -60px; 
+}
+
+.qr-code.right {
+  margin-right: -60px; 
+}
+
 .massage-title {
   text-align: center;
-  flex: 1; /* prend l'espace central disponible */
-  font-size: 2em; /* ajuste au besoin */
+  flex: 1; 
+  font-size: 2em;  
 }
 
 
