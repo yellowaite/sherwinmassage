@@ -402,6 +402,12 @@ header.major {
   flex: 1 1 auto;
 }
 
+@media screen and (max-width: 768px) {
+  .qr-left,
+  .qr-right {
+    display: none;
+  }
+}
 
 
 @media screen and (max-width: 480px) {
