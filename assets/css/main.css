@@ -386,12 +386,12 @@ header.major {
 
 .qr-left {
   margin-left: -10px; 
-  transform: translateX(-40px);	
+  transform: translateX(-80px);	
 }
 
 .qr-right {
   margin-right: -10px; 
-  transform: translateX(40px);	
+  transform: translateX(80px);	
 }
 
 .massage-title {
