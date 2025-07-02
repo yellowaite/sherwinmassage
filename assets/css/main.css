@@ -371,8 +371,9 @@ code {
 }
 
 .qr-code {
-  width: 60px; /* ajuste selon la taille souhaitée */
+  width: 60px; 
   height: auto;
+  margin: 0 40px;
 }
 
 @media screen and (max-width: 480px) {
