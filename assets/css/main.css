@@ -366,8 +366,8 @@ code {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px; /* espace entre les éléments */
-  flex-wrap: wrap; /* permet un bon comportement responsive */
+  gap: 60px; 
+  flex-wrap: wrap; 
 }
 
 .qr-code {
