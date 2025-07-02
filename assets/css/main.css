@@ -371,6 +371,7 @@ header.major {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0 10px;
 }
 
 .qr-left,
@@ -381,6 +382,14 @@ header.major {
 .qr-code {
   width: 100px;
   height: auto;
+}
+
+.qr-left {
+  margin-left: -10px; 
+}
+
+.qr-right {
+  margin-right: -10px; 
 }
 
 .massage-title {
