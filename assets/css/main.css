@@ -371,7 +371,7 @@ code {
 }
 
 .qr-code {
-  width: 60px; 
+  width: 100px; 
   height: auto;
   margin: 0 40px;
 }
