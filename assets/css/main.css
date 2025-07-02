@@ -2436,11 +2436,6 @@ button.primary:hover,
 	margin: auto;
 }
 
-.carousel-item video {
-  max-width: 100%;   
-}
-
-
 .prev,
 .next {
 	position: absolute;
