@@ -2437,9 +2437,13 @@ button.primary:hover,
 }
 
 .carousel-item video {
-  max-width: 60% !important;
+  max-width: 60%;
+  max-height: 400px; 
   height: auto;
+  display: block;
+  margin: auto;
 }
+
 
 .prev,
 .next {
