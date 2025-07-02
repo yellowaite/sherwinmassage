@@ -2437,7 +2437,7 @@ button.primary:hover,
 }
 
 .carousel-item video {
-  max-width: 60%;
+  max-width: 60% !important;
   height: auto;
 }
 
