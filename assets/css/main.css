@@ -2428,7 +2428,8 @@ button.primary:hover,
 	width: 100%;
 }
 
-.carousel-item img {
+.carousel-item img,
+.carousel-item video {
 	max-width: 80%;
 	height: auto;
 	display: block;
