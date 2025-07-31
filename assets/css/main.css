@@ -2428,6 +2428,11 @@ button.primary:hover,
 	width: 100%;
 }
 
+.special-img {
+    max-width: 60%; 
+    height: auto;
+}
+
 .carousel-item img {
 	max-width: 80%;
 	height: auto;
