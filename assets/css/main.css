@@ -2430,7 +2430,7 @@ button.primary:hover,
 
 .special-img {
     max-width: 60%; 
-    height: auto;
+    max-height: 600px;
 }
 
 .carousel-item img {
