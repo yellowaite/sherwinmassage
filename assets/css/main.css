@@ -3175,7 +3175,9 @@ ul.icons.alt li a.icon:hover:before {
 }
 
 .logo {
-	max-height: 150px;
+	max-height: 250px;
+	height: auto;
+ 	width: auto;
 }
 
 .logo-container {
