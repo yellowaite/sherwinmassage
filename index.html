@@ -4,11 +4,31 @@
 
 <head>	
 	<script>
-	   posthog.init('phc_J85HXGH9vexrPcg9a3kw603d9nV0efocsimM2g6v0IY', {
-		    api_host: 'https://eu.i.posthog.com',
-		    person_profiles: 'identified_only'
-		})
+	  (function(t, e) {
+	    var p = t.createElement("script");
+	    p.type = "text/javascript";
+	    p.async = !0;
+	    p.src = "https://eu-assets.i.posthog.com/static/array.js";
+	    var r = t.getElementsByTagName("script")[0];
+	    r.parentNode.insertBefore(p, r);
+	
+	    e.posthog = e.posthog || [];
+	    e.posthog.init = function(apiKey, config) {
+	      config = config || {};
+	      config.api_host = "https://eu.i.posthog.com";
+	      e.posthog._i = [[apiKey, config]];
+	    };
+	
+	    e.posthog.capture = function(eventName, properties) {
+	      e.posthog.push(["capture", eventName, properties]);
+	    };
+	
+	    posthog.init('phc_J85HXGH9vexrPcg9a3kw603d9nV0efocsimM2g6v0IY', {
+	      person_profiles: 'identified_only'
+	    });
+	  })(document, window);
 	</script>
+
 	<title>Sherwin's Massage</title>
 	<link rel="icon" href="images/logo.JPG" type="image/jpeg">
 	<meta charset="utf-8" />
@@ -272,6 +292,7 @@
 </body>
 
 </html>
+
 
 
 
