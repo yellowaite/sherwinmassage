@@ -112,7 +112,7 @@
 		<footer id="footer">
 			<section>
 				<h2>Contact Us</h2>
-				<form method="POST" action="https://formspree.io/f/mrblyppz">
+				<form id="contact-form" method="POST" action="https://formspree.io/f/mrblyppz">
 				  <div class="fields">
 				    <div class="field">
 				      <label for="name">Name</label>
@@ -131,6 +131,45 @@
 				    <li><input type="submit" value="Send Message" /></li>
 				  </ul>
 				</form>
+				
+				<p id="confirmation-message" style="display: none; color: green; font-weight: bold;">
+				  ✅ Message sent! Thank you for contacting us.
+				</p>
+				
+				<script>
+				  const form = document.getElementById("contact-form");
+				  const confirmation = document.getElementById("confirmation-message");
+				
+				  form.addEventListener("submit", function (e) {
+				    e.preventDefault();
+				    const data = new FormData(form);
+				
+				    fetch(form.action, {
+				      method: "POST",
+				      body: data,
+				      headers: {
+				        'Accept': 'application/json'
+				      }
+				    })
+				    .then(response => {
+				      if (response.ok) {
+				        form.reset();
+				        confirmation.style.display = "block";
+				      } else {
+				        response.json().then(data => {
+				          confirmation.innerText = data.error || "Oops! Something went wrong.";
+				          confirmation.style.display = "block";
+				          confirmation.style.color = "red";
+				        });
+				      }
+				    })
+				    .catch(error => {
+				      confirmation.innerText = "Network error. Please try again later.";
+				      confirmation.style.display = "block";
+				      confirmation.style.color = "red";
+				    });
+				  });
+				</script>
 
 
 			</section>
@@ -226,6 +265,7 @@
 </body>
 
 </html>
+
 
 
 
