@@ -401,6 +401,29 @@ header.major {
   text-align: center;
   flex: 1 1 auto;
 }
+.scanme-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.scanme-arrow {
+  animation: bounce 1.5s infinite;
+}
+
+.scanme-text {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #ff6600;
+  margin-top: 5px;
+  letter-spacing: 2px;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(8px); }
+}
 
 @media screen and (max-width: 768px) {
   .qr-left,
