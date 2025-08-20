@@ -413,11 +413,11 @@ header.major {
 }
 
 .scanme-text {
-  font-size: 1.2em;
+  font-size: 32px; 
   font-weight: bold;
-  color: #ff6600;
-  margin-top: 5px;
-  letter-spacing: 2px;
+  color: #ff6600; 
+  text-align: center;
+  margin-top: 10px;
 }
 .scanme-block {
   display: flex;
@@ -426,13 +426,7 @@ header.major {
   margin-top: 5px;
 }
 
-.scanme-text {
-  font-size: 0.9em;
-  font-weight: bold;
-  color: #ff6600;
-  margin-top: 3px;
-  letter-spacing: 1px;
-}
+
 
 .arrow {
   animation: bounce 1.5s infinite;
